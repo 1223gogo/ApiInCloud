@@ -42,6 +42,29 @@ Docker 이미지 구축
 - RUN apt-get install -y curl
 curl : 통신 util 
 
+Dockerfile 생성 p.373~
+- 변하지 않는 것부터 이미지 레이어 쌓기
+	JDK -> 라이브러리 -> 애플리케이션 코드
+
+부트자료 먼저만들고 카피하였음
+효율적으로...
+jdk -> application -> lib -> app -> class
+
+class 부분만 바꾸면 용량도 적고, 빠르게 실행할 수 있다.
+
+gradle> build> bootjar
+snapshot extract(압축풀기)
+layer로 extract 하기 p.377
+>java -Djarmode=layertools -jar application.jar(여기 snapshot.jar파일넣기) extract
+
+<restaurant readme 참조>
+For Build
+Dockerfile 있는 위치에서 
+> docker build -t 폴드/파일명 .
+( .까지 적어주기)
+
+>docker image is
+이미지 파일 확인하기
 
 
 
