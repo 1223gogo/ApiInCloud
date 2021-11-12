@@ -1,0 +1,48 @@
+<Swagger>
+- 개발자가 REST 웹서비스를 설계, 빌드, 문서화, 소비하는 일을 도와준다.
+- 프론트엔드 개발자와 소통
+- 사용이 쉽다.
+- 테스트 가능한 UI를 제공해준다.
+- p.284 ~ p.288 Swagger 사용방법
+
+interface JpaRepository<T, ID>
+generic
+
+insomnia 
+REST 테스트하는 어플리케이션
+
+<h2Database>
+localhost:port/h2-console/
+
+JDBC URL
+jdbc:h2:mem:testdb
+
+getById(id);
+- 객체 자체만 접근
+- 혹시 조회할까봐 생성
+
+ORM(Object Relational Mapping)
+OOP(Object Oriented Programming)
+
+JPA
+@Column
+@Table
+
+aws free tier
+heroku
+
+
+백엔드 엔지니어로만 봐서 프로젝트가 완성될 것이냐? 아니다. 비즈니스 등의 프로세스를 파악해야한다. 
+회사가 프론트엔드에 요구하는 것을 분석해보아라. UI/UX등을 배울 수 있을 것이다.
+넓은 시각을 가져라.
+
+Docker 이미지 구축
+- FROM ubuntu:18.04
+- RUN apt-get update
+- RUN apt-get install -y curl
+curl : 통신 util 
+
+
+
+
+
